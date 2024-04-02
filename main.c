@@ -162,6 +162,7 @@ int main()
     printf("\t 1 - Registrar usuários\n\n");
     printf("\t 2 - Consultar usuários\n\n");
     printf("\t 3 - Excluir usuários\n\n");
+    printf("\t 4 - Sair do sistema\n\n");
     printf("Opção: ");
     scanf ("%d", &opcao);//Input of user
     system("cls");//Clean terminal
@@ -177,6 +178,10 @@ int main()
     case 3:
         excluir();
         break; 
+    case 4:
+        printf("Sistema finalizado com sucesso!");
+        return 0;
+        break;
     default:
         printf("Comando invalido, tente novamente\n");
         system("pause");
